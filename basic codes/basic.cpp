@@ -90,6 +90,108 @@ int main()
 	// 	cout<<"real roots are not possible"<<endl;
 	// }
 
-	//
+	//12 sum of natural numbers
+	// int n;
+	// cin>>n;
+	// int sum=0;
+	// for(int i=1;i<=n;i++)
+	// {
+	// 	sum+=i;
+	// }
+	// cout<<sum;
+
+	//13 to check whther leap year or not
+	// int n;
+	// cin>>n;
+	// if(n%4==0)
+	// 	cout<<"leap year"<<endl;
+	// else
+	// 	cout<<"Not leap year"<<endl;
+	
+	//14 finding the factorial
+	// int n;
+	// cin>>n;
+	// int ans=1;
+	// for(int i=n;i>=1;i--)
+	// {
+	// 	ans*=i;
+	// }
+	// cout<<ans;
+
+	//15 Generate multiplication table
+	// int n;
+	// cin>>n;
+	// for(int i=1;i<=10;i++)
+	// {
+	// 	cout<<n*i<<endl;
+	// }
+
+	//16 displaying the fibonacci series
+	// int n;
+	// cout<<"enter the number  of terms to be printed in fibonacci: ";
+	// cin>>n;
+	// int first=0;
+	// int second=1;
+	// int next;
+	// for(int i=1;i<=n;i++)
+	// {
+	// 	if(i==1){
+	// 		cout<<first<<" ";
+	// 		continue;
+	// 	}
+	// 	if(i==2){
+	// 		cout<<second<<" ";
+	// 		continue;
+	// 	}
+	// 	next=first+second;
+	// 	first=second;
+	// 	second=next;
+	// 	cout<<next<<" ";
+	// }
+	
+
+	// 17 to find gcd of numbers;
+	// int a;
+	// int b;
+	// cin>>a>>b;
+	// *first way to solve the problem
+	// // while(a!=b){
+	// // 	if(a>b){
+	// // 		a=a-b;
+
+	// // 	}
+	// // 	else{
+	// // 		b=b-a;
+	// // 	}
+	// // }
+	// // cout<<a<<endl;
+	
+
+	// //second way to find gcd
+	// int hcf;
+	// int k=min(a,b);
+	// for(int i=1;i<=k;i++){
+	// 	if(a%i==0 and b%i==0){
+	// 		hcf=i;
+	// 	}
+	// }
+	// cout<<hcf<<endl;
+
+	//18 lcm of two numbers
+	int a;
+	int b;
+	cin>>a>>b;
+	int ans;
+	int m=max(a,b);
+	do{
+		if(m%a==0 and m%b==0){
+			cout<<m;
+			break;
+		}
+		else
+			m++;
+	}while(true);	
+	// cout<<m;
+
 	return 0;
 }
