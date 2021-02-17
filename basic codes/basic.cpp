@@ -177,21 +177,23 @@ int main()
 	// }
 	// cout<<hcf<<endl;
 
-	//18 lcm of two numbers
-	int a;
-	int b;
-	cin>>a>>b;
-	int ans;
-	int m=max(a,b);
-	do{
-		if(m%a==0 and m%b==0){
-			cout<<m;
-			break;
-		}
-		else
-			m++;
-	}while(true);	
+	// //18 lcm of two numbers
+	// int a;
+	// int b;
+	// cin>>a>>b;
+	// int ans;
+	// int m=max(a,b);
+	// do{
+	// 	if(m%a==0 and m%b==0){
+	// 		cout<<m;
+	// 		break;
+	// 	}
+	// 	else
+	// 		m++;
+	// }while(true);	
 	// cout<<m;
+
+	// 19 
 
 	return 0;
 }
