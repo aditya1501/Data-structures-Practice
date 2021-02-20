@@ -1,3 +1,4 @@
+//taking input in better way and insert at ith position
 #include<bits/stdc++.h>
 using namespace std;
 class Node{
@@ -28,6 +29,23 @@ Node* takeinput2(){ //we will use two pointers to optimise our code
 	}	
 	return head;
 }
+Node* insertNode(Node *head,int i,int data){
+	Node *newNode=new Node(data);
+	int count=0;
+	Node *temp=head;
+	if(i==0){
+		newNode->next=head;
+		head=newNode;
+		return head;
+	}
+	while(count<i-1 and temp!=NULL){
+		temp=temp->next;
+		count++;
+	}
+	newNode->next=temp->next;
+	temp->next=newNode;
+	return head;
+}
 void print(Node *head){
 	Node *temp=head;
 	while(temp!=NULL)
@@ -40,4 +58,9 @@ void print(Node *head){
 int main(){
 	Node  *head=takeinput2();
 	print(head);
+	int i,data;
+		cin>>i>>data;
+		head=insertNode(head,i,data);
+		cout<<endl;
+		print(head);
 }
