@@ -193,7 +193,7 @@ int main()
 	// }while(true);	
 	// cout<<m;
 
-	// 19 	
-
+	// 19 	program to reverse a number
+	
 	return 0;
 }
